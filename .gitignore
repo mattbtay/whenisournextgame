@@ -1,5 +1,12 @@
 node_modules
-dist
 .tmp
 .sass-cache
-bower_components
+.tmp
+app
+test
+.editorconfig
+.jshintrc
+.yo-rc.json
+bower.json
+Gruntfile.js
+package.json

@@ -9,9 +9,9 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <link rel="styesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -27,23 +27,18 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<div class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">When is our next game?</a>
-    </div>
-  </div>
-</div>
 
-<div class="container">
+<div id="content" class="container">
 
-  <div class="row vertical-align">
+  <div class="row">
 
-    <div class="col-md-12">
-        <p class="main-text"><span class="gameDate"><i class="fa fa-cog fa-spin"></i></span> at <span class="gameTime"><i class="fa fa-cog fa-spin"></i></span> <span class="teamBreak"><small>v.s.</small></span> <span class="gameTeam"><i class="fa fa-cog fa-spin"></i></span>
+    <div class="loadingText"><i class="fa fa-spinner fa-spin"></i></div>
+
+    <div id="mainText" class="col-md-12 hide">
+        <p class="main-text"><span class="gameDate"></span> at <span class="gameTime"></span> <span class="teamBreak"><small>v.s.</small></span> <span class="gameTeam"></span>
           
         </p>
-        <p>Last week's game was a <span class="gameResult"></span>
+        
         
       
 
@@ -51,7 +46,7 @@
 
   </div>
 
-  <div class="row">
+  <div class="contact-info hide row">
 
     <div class="col-md-12">
 
@@ -76,6 +71,7 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/tabletop/src/tabletop.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -92,7 +88,5 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-        <script src="scripts/tabletop.js"></script>
-        <script src="scripts/custom.js"></script>
 </body>
 </html>
