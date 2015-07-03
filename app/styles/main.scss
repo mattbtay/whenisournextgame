@@ -1,0 +1,33 @@
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,700');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background:whitesmoke;
+
+}
+
+
+
+.main-text {
+  text-align:center;
+  font-size:38px;
+  font-weight:300;
+}
+
+.gameTeam, .teamBreak {
+	display:block;
+	width:100%;
+}
+
+.gameDay, .gameTime, .gameTeam, .gameDate {
+	font-size:40px;
+	color:#05535D;
+}
+
+#gamePlayerPicture {
+	border-radius:50%;
+	width:250px;
+	height:auto;
+}
