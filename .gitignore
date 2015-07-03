@@ -1,7 +1,12 @@
 node_modules
 .tmp
 .sass-cache
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/gh-pages
+.tmp
+app
+test
+.editorconfig
+.jshintrc
+.yo-rc.json
+bower.json
+Gruntfile.js
+package.json
