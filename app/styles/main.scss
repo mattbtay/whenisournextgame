@@ -10,10 +10,15 @@ body {
 
 
 
-.main-text {
-  text-align:center;
+#mainText p, .loadingText {
   font-size:38px;
   font-weight:300;
+  text-align:center;
+  //opacity:0;
+}
+
+.loadingText {
+	.fa { color:#05535D;}
 }
 
 .gameTeam, .teamBreak {
@@ -31,3 +36,16 @@ body {
 	width:250px;
 	height:auto;
 }
+
+.hide {
+	display:none;
+}
+
+.show {
+	display:block;
+}
+
+#content {
+	margin-top:5%;
+}
+

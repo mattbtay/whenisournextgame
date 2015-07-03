@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+
+var checkStatus = setInterval(function(){
+  if($('.gameDate').html().length < 1) {
+  } else {
+    clearInterval(checkStatus);
+    $('#mainText, .loadingText, .contact-info').toggleClass('hide');
+  }
+
+},100);
+
+
+
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1UbUmFSyn7sEeTS7hJ0H9kpzgU1196RYyIo6CFTwPtVY/pubhtml';
 
 function init() {
@@ -9,10 +21,6 @@ function init() {
   }
 
   function showInfo(data, tabletop) {
-    //alert("Successfully processed!")
-    console.log(data);
-    //console.log(data[9].Day);
-    //console.log(data.length);
 
     	
 
@@ -29,7 +37,6 @@ function init() {
             gameTeam = data[i].Home,
             gameResult = data[i].Result,
             gamePlayerPicture = data[i].gamePlayerPhoto;
-            //alert(gameDate);
 
       if( moment().isSame(gameDate )){
         $('.gameDay').html(gameDay);
@@ -50,12 +57,9 @@ function init() {
 
 
           var lastGameResult = data[i].length - 2;
-        console.log(lastGameResult);
-         //var prevGame = data[lastGameResult].Result;
             $('.gameResult').html(lastGameResult);
-          
-          console.log(gamePlayerPicture);
           break;
+
 
         }
 
@@ -73,13 +77,17 @@ function init() {
 	init();
 
 
-
+  
 
 
 });
 
 
-
-
+function putMiddle() {
+  var curHeight = $('.vert').css('height');
+  var newHeight = curHeight / 2;
+  $('.vert').css('top', - newHeight);
+  console.log('its put');
+}
 
 
