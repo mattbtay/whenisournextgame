@@ -10,8 +10,6 @@ var checkStatus = setInterval(function(){
 
 },100);
 
-
-
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1UbUmFSyn7sEeTS7hJ0H9kpzgU1196RYyIo6CFTwPtVY/pubhtml';
 
 function init() {
@@ -63,31 +61,12 @@ function init() {
 
         }
 
-
-        
-
     }// end loop
-
-
-   	
 
   }// end table
 
-
 	init();
 
-
-  
-
-
 });
-
-
-function putMiddle() {
-  var curHeight = $('.vert').css('height');
-  var newHeight = curHeight / 2;
-  $('.vert').css('top', - newHeight);
-  console.log('its put');
-}
 
 

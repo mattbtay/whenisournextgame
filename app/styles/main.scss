@@ -49,3 +49,10 @@ body {
 	margin-top:5%;
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
