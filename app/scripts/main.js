@@ -34,13 +34,17 @@ function init() {
             gameTime = data[i].Start,
             gameTeam = data[i].Home,
             gameResult = data[i].Result,
-            gamePlayerPicture = data[i].gamePlayerPhoto;
+            gamePlayerPicture = data[i].gamePlayerPhoto,
+            gameColor = data[i].Color;
 
       if( moment().isSame(gameDate )){
         $('.gameDay').html(gameDay);
-          $('.gameDate').html(gameDate);
-          $('.gameTime').html(gameTime);
-          $('.gameTeam').html(gameTeam);
+        $('.gameDate').html(gameDate);
+        $('.gameTime').html(gameTime);
+        $('.gameTeam').html(gameTeam);
+        $('.gameColor').html(gameColor);
+        
+
 
         break; 
 
@@ -52,7 +56,8 @@ function init() {
           $('.gameTime').html(newTime);
           $('.gameTeam').html(gameTeam);
           $('#gamePlayerPicture').prop('src', gamePlayerPicture);
-
+          $('body').addClass(gameColor);
+          $('.gameColor').html(gameColor);
 
           var lastGameResult = data[i].length - 2;
             $('.gameResult').html(lastGameResult);

@@ -5,7 +5,23 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	background:whitesmoke;
+}
 
+body.dark {
+	
+	background:#05535D;
+
+	.loadingText .fa {color:#fff;}
+	
+	p {color: rgba(255,255,255,.7);}
+
+	.gameDay, .gameTime, .gameTeam, .gameDate {
+	
+		color:#fff;
+		
+	}
+
+	a {color:#fff;}
 }
 
 
@@ -36,6 +52,8 @@ body {
 	width:250px;
 	height:auto;
 }
+
+small.note {font-size:50%;}
 
 .hide {
 	display:none;
